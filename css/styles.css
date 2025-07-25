@@ -212,7 +212,7 @@ img {
   background-color: var(--blanco);
   content: "";
   height: 20rem;
-  width: 130%;
+  width: 120%;
   position: absolute;
 }
 .seguridad::before {
@@ -221,7 +221,7 @@ img {
   transform: rotate(3deg);
 }
 .seguridad::after {
-  bottom: -10rem;
+  bottom: -12rem;
   left: 0;
   transform: rotate(3deg);
 }
@@ -235,4 +235,18 @@ img {
     column-gap: 5rem;
     align-items: center;
   }
+}
+
+@media (min-width: 768px) {
+  .comisiones__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.comisiones__texto {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
